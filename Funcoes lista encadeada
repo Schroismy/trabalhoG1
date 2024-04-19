@@ -1,0 +1,31 @@
+// Implementar essas funções em uma lista encadeada genérica em C:
+
+// 1. `Lista_new(Lista* lista, int data_size, void (*free_data)(void*))`: Ao criar uma nova lista, você precisará alocar memória para a estrutura da lista e inicializar seus campos. Certifique-se de definir o tamanho dos dados a serem armazenados e a função para liberar esses dados quando necessário.
+
+// 2. `Lista_delete(Lista* lista)`: Ao excluir uma lista, você deve liberar toda a memória alocada para a lista, incluindo os nós e os dados armazenados neles.
+
+// 3. `int Lista_isEmpty(Lista* lista)`: Verifique se a lista está vazia. Isso pode ser feito verificando se o ponteiro para o primeiro nó é nulo.
+
+// 4. `int Lista_size(Lista* lista)`: Contar o número de elementos na lista, percorrendo todos os nós e contando-os.
+
+// 5. `void Lista_pushFront(Lista* lista, void* valor)`: Inserir um novo elemento no início da lista, criando um novo nó e ajustando os ponteiros adequadamente.
+
+// 6. `void Lista_pushBack(Lista* lista, void* valor)`: Inserir um novo elemento no final da lista, percorrendo a lista até o último nó e ajustando os ponteiros para incluir o novo nó.
+
+// 7. `void Lista_search(Lista* lista, void* chave, int (*cmp)(void*,void*))`: Buscar um elemento na lista com base em uma chave, utilizando uma função de comparação.
+
+// 8. `void Lista_first(Lista* lista, void* dest)`: Copiar o primeiro elemento da lista para uma variável de destino.
+
+// 9. `void Lista_last(Lista* lista, void* dest)`: Copiar o último elemento da lista para uma variável de destino.
+
+// 10. `void Lista_current(Lista* lista, void* dest)`: Copiar o elemento atual da lista para uma variável de destino.
+
+// 11. `void Lista_next(Lista* lista, void* dest)`: Mover para o próximo elemento da lista e copiar seu valor para uma variável de destino.
+
+// 12. `void Lista_remove(Lista* lista, void* chave, int (*cmp)(void*,void*))`: Remover o elemento da lista que corresponde à chave fornecida.
+
+// 13. `void Lista_removeCurrent(Lista* lista)`: Remover o elemento atual da lista.
+
+// 14. `void Lista_insertAfter(Lista* lista, void* dado)`: Inserir um novo elemento após o elemento atual da lista.
+
+// Ao implementar essas funções, lembre-se de gerenciar corretamente a alocação de memória, manipular os ponteiros dos nós adequadamente e garantir que as operações na lista sejam realizadas de forma segura e eficiente.
